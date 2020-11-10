@@ -1,0 +1,218 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.font_small {
+				font-size: 0.8rem;
+			}
+
+			.font_small1 {
+				font-size: 13px;
+			}
+
+			.font_small2 {
+				font-size: 14px;
+				color: #666;
+			}
+
+			.font_small3 {
+				font-size: 24px;
+			}
+
+			.bg_color {
+				background-color: #FFFFFF;
+			}
+
+			.breadcrumb-item+.breadcrumb-item::before {
+				content: "|";
+			}
+
+			.bg_color1 {
+				background-color: #3EB134;
+				width: 50px;
+				height: 25px;
+			}
+
+			.bg_daxiao {
+				background-color: #002C69;
+				color: #FFFFFF;
+				width: 150px;
+			}
+
+			.bg_color2 {
+				background-color: #002C69;
+			}
+
+			.size_colorl {
+				color: #FFFFFF;
+			}
+
+			.bk_daxiao {
+				width: 270px;
+				height: 26px;
+				border: 1px solid #6C757D;
+				background-image: url(img/微信图片_20201028171859.png);
+				background-repeat: no-repeat;
+				background-position-x: 235px;
+				background-position-y: -3px;
+			}
+
+			.carousel-indicators>li {
+				width: 12px;
+				height: 12px;
+				border-radius: 100%;
+				margin-left: 15px;
+			}
+
+			.carousel-indicators .active {
+				background-color: #FF6900;
+			}
+
+			.border_bottom {
+				border-bottom: 2px solid #e8e8e8;
+			}
+
+			.border_bottom1 {
+				border-bottom: 5px solid #e8e8e8;
+			}
+
+			.border_bottom2 {
+				border-bottom: 2px dotted #e8e8e8;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row bg_color no-gutters justify-content-center mt-3">
+				<div class="col-3">
+					<div>
+						<img src="img/logo.png">
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-5 offset-sm-5 offset-lg-4">
+					<ul class="breadcrumb bg_color  col-md-12">
+						<li class="breadcrumb-item">
+							<a class="text-dark font_small" href="#"><img src="img/微信图片_20201028170020.png">&nbsp;4000-585-116&nbsp;中文</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="text-dark font_small" href="#">English&nbsp;<img src="img/微信图片_20201028170036.png">&nbsp;<img src="img/微信图片_20201028170032.png">&nbsp;<button
+								 class="border-0 rounded-0 bg_color1">登录</button></a>
+						</li>
+						<li class="breadcrumb-item">
+							<a class="text-dark font_small" href="#">注册</a>
+						</li>
+					</ul>
+					<div>
+						<input class="bk_daxiao btn btn-light  rounded-0 offset-lg-3 offset-sm-2" type="text" />
+					</div>
+				</div>
+			</div>
+			<div class="mt-4 bg_color2 p-1">
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link size_colorl h5" href="#">首页</a></li>
+					<li class="nav-item"><a class="nav-link size_colorl h5" href="#">关于我们</a></li>
+					<li class="nav-item"><a class="nav-link size_colorl h5" href="#">公司动态</a></li>
+					<li class="nav-item"><a class="nav-link size_colorl h5" href="#">产品中心</a></li>
+					<li class="nav-item"><a class="nav-link size_colorl h5" href="#">联系我们</a></li>
+					<li class="nav-item offset-lg-3"><a class="nav-link size_colorl h5" href="#">购物车(0)</a></li>
+				</ul>
+			</div>
+			<div id="parent" class="carousel border_bottom1" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active"><img class="w-100" src="img/banner_01.jpg"></div>
+					<div class="carousel-item"><img class="w-100" src="img/banner_02.jpg"></div>
+					<div class="carousel-item"><img class="w-100" src="img/banner_03.jpg"></div>
+					<div class="carousel-item"><img class="w-100" src="img/banner_04.jpg"></div>
+				</div>
+				<ul class="carousel-indicators">
+					<li data-target="#parent" data-slide-to="0" class="active"></li>
+					<li data-target="#parent" data-slide-to="1"></li>
+					<li data-target="#parent" data-slide-to="2"></li>
+					<li data-target="#parent" data-slide-to="3"></li>
+				</ul>
+			</div>
+			<div class="row no-gutters mt-4">
+				<div class="col-12">
+					<div class="p-2  border_bottom">
+						<img src="img/微信图片_20201028181042.png">&nbsp;<a class="h6">净美仕产品</a><a class="offset-lg-10 offset-md-9 offset-sm-8 font_small">more</a>
+					</div>
+				</div>
+				<div class="col-12 row no-gutters justify-content-between ">
+					<div class="col-md-3 col-sm-12 mt-3"><img class="w-100" src="img/01.jpg"></div>
+					<div class="col-md-3 col-sm-12 mt-sm-3"><img class="w-100" src="img/02.jpg"></div>
+					<div class="col-md-3 col-sm-12  mt-sm-3"><img class="w-100" src="img/03.jpg"></div>
+				</div>
+			</div>
+			<div class="row no-gutters justify-content-between mb-5">
+				<div class="col-sm-12 col-md-12 col-lg-5">
+					<div class="border_bottom p-3"><img src="img/微信图片_20201028181042.png">&nbsp;<a class="h6">净美仕产品</a><a class="offset-lg-7 offset-md-9 offset-sm-8">more</a></div>
+					<p class="mt-3 font_small1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京净美仕环境科技有限公司自诞生起一直关注人类呼吸健康的问题，并专注于室内空气质量的研究与改善。2003年，非典来袭，环境安全威胁到了每个人的生命，全国陷入一片恐慌。净美仕肩负着为人类创造健康安全生活环境的使命应运而生。2012年7月，亿朗以“净美仕(Mfresh)”为品牌重塑，以崭新的面貌屹立在净化行业。<a
+						 href="#"> 查看更多</a></p>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-5">
+					<div class="border_bottom p-3"><img src="img/微信图片_20201028181042.png">&nbsp;<a class="h6">净美仕产品</a><a class="offset-lg-7 offset-md-9 offset-sm-8">more</a></div>
+					<div class="font_small1 row no-gutters justify-content-between border_bottom2 mt-3 mb-2 p-2">
+						<div><img src="img/微信图片_20201028193328.png">空气净化器要逆天？ “玫瑰金”“土豪金”齐上阵</div><a>2016-02-21</a>
+					</div>
+					<div class="font_small1 row no-gutters justify-content-between border_bottom2 p-1">
+						<div><img src="img/微信图片_20201028193328.png">净美仕新风净化系统　助力校园新风行动</div><a>2016-02-21</a>
+					</div>
+					<div class="font_small1 row no-gutters justify-content-between border_bottom2 mt-2 mb-2 p-1">
+						<div><img src="img/微信图片_20201028193328.png">全国新风行动全面启动 助推净美仕战略升级</div><a>2016-02-21</a>
+					</div>
+					<div class="font_small1 row no-gutters justify-content-between border_bottom2 p-1">
+						<div><img src="img/微信图片_20201028193328.png">智能空气净化器翻盘：净美仕能否领衔?</div><a>2016-02-21</a>
+					</div>
+				</div>
+			</div>
+			<div class="row no-gutters mt-5 justify-content-center bg-light p-3">
+				<div class="col-11 border_bottom row no-gutters ">
+					<div class="col-sm-12 col-md-12 col-lg-6 d-flex justify-content-between p-4">
+						<ul class="list-unstyled font_small2">
+							<li class="h6">走进净美仕</li>
+							<li>公司简介</li>
+							<li>净美仕精神</li>
+							<li>品牌历程</li>
+						</ul>
+						<ul class="list-unstyled font_small2">
+							<li class="h6">成为合作伙伴</li>
+							<li>成为核心供应商</li>
+							<li>电商经销入口</li>
+							<li>成为线下代理商</li>
+						</ul>
+						<ul class="list-unstyled font_small2">
+							<li class="h6">售后服务</li>
+							<li>在线报修</li>
+							<li>售后政策</li>
+							<li>下载中心</li>
+						</ul>
+						<ul class="list-unstyled font_small2">
+							<li class="h6">加入净美仕</li>
+							<li>招聘贤才</li>
+							<li>联系我们</li>
+							<li>网站地图</li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-lg-5 offset-lg-1 col-sm-12 d-flex justify-content-center ">
+						<div class="col-5">
+							<img class="w-100" src="img/qrcode.png">
+						</div>
+						<div class="col-7 text-center mt-3">
+							<h4 class="font_small3">4000-585-116</h4>
+							<p class="font_small2">周一至周日9:00-18:00</p>
+							<a class="bg_daxiao btn" href="#">金牌客服</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 text-center font_small mt-4">Copyright © 2014 Apple Inc 保留所有权利。使用条款|客户隐私政策 © 北京净美仕环境科技有限公司
+					京公安网安备 11010500896 | 京ICP备 12050755</div>
+			</div>
+		</div>
+	</body>
+</html>

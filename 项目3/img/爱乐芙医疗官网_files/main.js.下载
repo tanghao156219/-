@@ -1,0 +1,54 @@
+/*
+ * 自己的JS脚步
+ * @Author: iceStone
+ * @Date:   2018-6-15 10:59:26
+ * @Last Modified by:   iceStone
+ * @Last Modified time: 2018-6-15 16:23:12
+ */
+
+'use strict';
+
+$(function() {
+ 		var windowWidth = $(window).width();
+	    
+	 // $(".navbar-nav li a").on("click",function(o){$(".navbar-toggle").removeClass("open");$(".navbar-collapse").removeClass("collapse in").addClass("collapse").removeClass("open")}),
+	  //$(".dropdown-toggle").on("click",function(o){$(".navbar-toggle").addClass("open");$(".navbar-collapse").addClass("collapse in").removeClass("collapse")}),
+	   /*	$(".navbar-toggle").on("click",function(){
+	   		$(this).toggleClass("open");
+	   		$("#scroll-menu").toggleClass("sticky-bottom");
+	   	});*/
+		if(windowWidth>767){
+	    	$(window).scroll(function(){
+				if($(window).scrollTop() >= 100){
+					$("#scroll-menu").removeClass("nav-area").addClass("sticky");
+				}else{
+					$("#scroll-menu").addClass("nav-area").removeClass("sticky");
+				}
+			})
+	    }
+			
+			
+			
+		
+		    //客服浮动框
+	    $("#aFloatTools_Hide").click(function() {
+	        $('#divFloatToolsView').animate({
+	            width : 'show',
+	            opacity : 'show'
+	        }, 100, function() {
+	            $('#divFloatToolsView').show();
+	        });
+	        $('#aFloatTools_Show').show();
+	        $('#aFloatTools_Hide').hide();
+	    });
+	    $("#aFloatTools_Show").click(function() {
+	        $('#divFloatToolsView').animate({
+	            width : 'hide',
+	            opacity : 'hide'
+	        }, 100, function() {
+	            $('#divFloatToolsView').hide();
+	        });
+	        $('#aFloatTools_Show').hide();
+	        $('#aFloatTools_Hide').show();
+	    });
+});

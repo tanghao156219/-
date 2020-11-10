@@ -1,0 +1,82 @@
+// JavaScript Document// constants to define the title of the alert and button text.
+//var ALERT_TITLE = "Oops!";
+var ALERT_BUTTON_TEXT = "关闭";
+//var confirm_TITLE = "Oops!";
+var confirm_BUTTON_OK_TEXT = "确定";
+var confirm_BUTTON_Cancel_TEXT = "取消";
+
+if(document.getElementById) {
+ window.alert = function(txt) {
+  createCustomAlert(txt);
+ }
+ alertNew = function(txt,sucFunc) {
+  createCustomAlertNew(txt,sucFunc);
+ }
+  window.confirm = function(txt,sucFunc,failFunc) {
+  createCustomConfirm(txt,sucFunc,failFunc);
+ }
+}
+
+function createCustomAlert(txt) {
+ d = document;
+ if(d.getElementById("modalContainer")) return;
+ mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+ mObj.id = "modalContainer";
+ alertObj = mObj.appendChild(d.createElement("div"));
+ layerObj = mObj.appendChild(d.createElement("div"));
+ alertObj.className = "alertPop";
+ layerObj.className = "blacklay";
+ //alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth)/2 + "px";
+ //h1 = alertObj.appendChild(d.createElement("h1"));
+ //h1.appendChild(d.createTextNode(ALERT_TITLE));
+ //h1.className = "poptit"; 
+ msg = alertObj.appendChild(d.createElement("p"));
+ msg.appendChild(d.createTextNode(txt));
+ btn = alertObj.appendChild(d.createElement("a"));
+ btn.className = "btns-orange";
+ btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+ btn.onclick = function() { removeCustompop();return false; }
+}
+
+function createCustomAlertNew(txt,sucFunc) {
+    d = document;
+    if(d.getElementById("modalContainer")) return;
+    mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+    mObj.id = "modalContainer";
+    alertObj = mObj.appendChild(d.createElement("div"));
+    layerObj = mObj.appendChild(d.createElement("div"));
+    alertObj.className = "alertPop";
+    layerObj.className = "blacklay";
+    msg = alertObj.appendChild(d.createElement("p"));
+    msg.appendChild(d.createTextNode(txt));
+    btn = alertObj.appendChild(d.createElement("a"));
+    btn.className = "btns-orange";
+    btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+    btn.onclick = function() { removeCustompop();sucFunc();}
+}
+
+
+function createCustomConfirm(txt,sucFunc,failFunc) {
+ d = document;
+ if(d.getElementById("modalContainer")) return;
+ mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+ mObj.id = "modalContainer"; 
+ confirmObj = mObj.appendChild(d.createElement("div"));
+ layerObj = mObj.appendChild(d.createElement("div"));
+ confirmObj.className = "alertPop";
+ layerObj.className = "blacklay";
+ msg = confirmObj.appendChild(d.createElement("p"));
+ msg.appendChild(d.createTextNode(txt));
+ btn1 = confirmObj.appendChild(d.createElement("a"));
+ btn1.className = "btns-orange";
+ btn1.appendChild(d.createTextNode(confirm_BUTTON_OK_TEXT));
+ btn1.onclick = function() { removeCustompop();sucFunc();}
+ btn2 = confirmObj.appendChild(d.createElement("a"));
+ btn2.className = "btns-gray";
+ btn2.appendChild(d.createTextNode(confirm_BUTTON_Cancel_TEXT));
+ btn2.onclick = function() { removeCustompop();failFunc(); }
+}
+function removeCustompop() {
+ document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+}
+

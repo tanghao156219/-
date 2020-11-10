@@ -1,0 +1,655 @@
+body {
+    background: #fff;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #3C3C3C;
+    line-height: 26px;
+    -webkit-text-size-adjust: 100%;
+    /*font-family: "pingFangSC-Regular";*/
+   font-family: "微软雅黑";
+}
+li{list-style: none;}
+.pad0{padding: 0;}
+.pad-top10{padding-top:10px;}
+.pad-top20{padding-top: 20px;}
+.pad-top54{padding-top: 54px;}
+.pad-top80{padding-top: 79px;}
+.pad-top130{padding-top:130px;}
+.pad-bottm10{padding-bottom: 10px;}
+.pad-bottm40{padding-bottom: 50px;}
+.pad-bottm30{padding-bottom: 30px;}
+.pad-bottm20{padding-bottom: 20px;}
+.pad-left12{padding-left: 12px;}
+.pad-left40{padding-left:40px;}
+.font-14{font-size: 14px;}
+.font-16{font-size: 16px;}
+.font-18{font-size: 18px;}
+.font20{font-size:20px;}
+.font-20{font-size: 20px;line-height: 28px;font-weight: 600;}
+.font-22{font-size: 22px;}
+.font-24{font-size: 24px;}
+.font-26{font-size: 26px;}
+.font-30{font-size: 30px;}
+.font-36{font-size: 36px;}
+.font-38{font-size: 38px;}
+.font-40{font-size: 40px;}
+.font-45{ font-size:45px;}
+.font-48{font-size: 48px;}
+.font-52{font-size: 52px;}
+.lht35{line-height: 35px;}
+.lht40{line-height: 40px;}
+.lht26{line-height: 26px;}
+.lht50{line-height: 50px;}
+.responsive{padding-bottom: 117px;padding-top:106px ;}
+.responsive img{padding-bottom: 30px;}
+.responsive-title{padding-bottom:79px;}
+.padLeft0{padding-left: 0;}
+.margLeft20{margin-left: 20px;}
+.clr{color: #008FFF;}
+.clr2{color: #29A7E2;}
+.clr7{color: #7E7E7E;}
+.clr9{color: #9d9d9d;}
+.clrA{color: #AFAFAF;}
+.fontW{font-weight: 600;}
+.bag{padding:10px 20px;background: #F2F2F2;border-radius: 14px;}
+.icon{border-right: 4px solid #008FFF;height: 13px;display: inline-block;border-radius: 5px;}
+@media only screen and (max-width:768px){
+	hr{margin-top: 10px;}
+	.pad-top{padding-top:5px}
+	.pad-top20{padding-top: 10px;}
+	.pad-top54{padding-top: 27px;}
+	.pad-top80{padding-top: 60px;}
+	.pad-top130{padding-top:80px;}
+	.pad-bottm40{padding-bottom: 30px;}
+	.pad-bottm30{padding-bottom: 20px;}
+	.font-14{font-size: 12px;}
+	.font-16{font-size: 14px;}
+	.font-18{font-size: 16px;}
+	.font20{font-size:16px;}
+	.font-22{font-size: 18px;}
+	.font-24{font-size: 18px;}
+	.font-26{font-size: 20px;}
+	.font-30{font-size: 20px;}
+	.font-36{font-size: 26px;}
+	.font-38{font-size: 28px;}
+	.font-40{font-size: 30px;}
+	.font-48{font-size: 32px;}
+	.font-52{font-size: 32px;}
+	.responsive{padding-bottom: 57px;padding-top:46px ;}
+	.responsive img{padding-bottom: 30px;}
+	.responsive-title{padding-bottom:79px;}
+
+}
+
+/*@font-face {
+  font-family: 'pingFangSC-Regular';
+  src: url('../font/PingFang-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'pingFangSC-Medium';
+  src: url('../font/PingFang-Medium.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+.fontFamilyM{font-family: "pingFangSC-Medium";}*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+a{
+	color: #3C3C3C;
+}
+a:focus, a:hover {
+	 color: #29A7E2; 
+    /*color: #52E9FF; */
+    text-decoration: none;
+    /*color: #24B2AE;*/
+    
+}
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.nav-area {
+    width: 100%;
+    height: auto;
+    background-color:rgba(3,26,53,0.8);
+    border-radius: 0;
+    border: none;    
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+@media only screen and (max-width:767px){
+	.nav-area {
+    padding-top: 0;
+	}
+}
+
+.sticky{
+	position: fixed;
+	height: auto;
+	z-index: 10000;
+	top: 0;
+	border-bottom: none;
+	padding: 0;
+/*	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;*/
+	background-color: rgba(3,26,53,0.8);
+}
+		
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.nav-area, .navbar-default .navbar-nav>li {
+    margin-bottom: 0;
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+     background-color: transparent ;
+   /* border-color: #337ab7;*/
+  /*color:  #24B2AE;*/
+}
+.navbar-nav>li>.dropdown-menu {
+   background-color: #2D3B4E;
+}
+.dropdown-menu1 a{color: #FFFFFF;line-height: 35px;}
+.dropdown-menu1 a:hover{color: #52E9FF;}
+.dropdown-menu>li>a {line-height:3.0;color:  #FFFFFF;}
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+   		color: #FFFFFF;
+	}
+	.navbar-nav .open .dropdown-menu>li>a {
+   		line-height: 35px;
+	}
+	.dropdown-menu>li>a:hover {
+    	background-color: transparent ;
+  		color: #52E9FF;
+	}
+}
+
+
+.dropdown-menu>li>a:hover {
+    background-color: transparent ;
+  	color: #52E9FF;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:#52E9FF;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color:#52E9FF;
+    background-color: transparent;
+}
+.container-fluid{padding: 0;}
+#navbar{ max-height:100%;}
+/*.navbar-default .navbar-toggle.open span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin: 25px 10px;
+}
+.navbar-default .navbar-toggle.open span {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}*/
+.navbar-default .navbar-toggle .icon-bar {
+    width: 35px;
+    margin-bottom: 6px;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+.navbar-default .navbar-toggle .icon-bar, .sticky {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 25px 19px;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    margin-right: 123px;
+    padding: 23px;
+}
+@media only screen and (max-width:767px){
+	.navbar>.container .navbar-brand{
+    	padding: 15px;
+    	margin: 0;
+	}
+}
+@media only screen and (max-width: 767px){
+	nav .container {
+    	height: auto;
+    	max-height: 100%;
+    	overflow-y: auto;
+	}
+	#navbar{
+		max-height: 100%;
+	}
+}
+
+#land{display: inline-block;padding: 25px 1px;}
+.sticky-bottom{bottom: 0;}
+.dropdown1{color: #FFFFFF;display: block;padding-bottom: 10px;}
+.dropdown1 li{list-style-type: disc;}
+/*服务*/
+#index .service-area{padding:133px 0 133px;text-align: center;}
+#index .service-area a{display: block;}
+#index .service{padding-bottom: 30px;}
+#index .service h4{font-weight: 600 ;line-height: 28px;font-size: 20px;}
+/*.service p{text-align: left;}*/
+
+@media screen and (min-width: 768px){
+	p{text-align: left;}
+}
+@media screen and (max-width: 768px){
+	#index .service p{padding: 0 53px;}
+	#index .service-area{padding:30px 0 3px;text-align: center;}
+}
+/*公司介绍*/
+/*#index .about-area img{width: 100%;}*/
+#index .about-area-content,#index .about-area-content div{padding-left: 0px;}
+#index .about-area-img{padding-top: 30px;}
+/*#index .about-area-img img{transition: all  0.6s;}
+#index .about-area-img:hover{transform: scale(1.2);}*/
+#index .about-area .about-area-more{padding: 57px;font-size: 18px;}
+/*更多动态*/
+#index .blog-bg{background:#fff;margin-bottom: 20px;transition: all ease 0.3s;}
+#index .blog-bg:hover{box-shadow: 0 0px 20px rgba(0,0,0,.3);}
+#index .blog-section{background: #F2F2F2;}
+#index .blog-section>img{width: 100%;}
+#index .blog-section .blog-text{padding:1px 16px 50px;}
+/*#index .blog-section img{width: 100%;}*/
+#index .blog-section .blog-text p{padding-top: 30px;height: 120px;margin-bottom: 62px;display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden}
+#index .blog-section .blog-text h3{height: 60px;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden;}
+#index .blog-section .prod-more{width:173px;height:45px;display:inline-block;background:rgba(0,143,255,1);border-radius:35px;border:1px solid rgba(5,5,5,0.08);font-size: 18px;color: #FFFFFF;line-height: 42px;}
+.lht22{line-height: 23px;}
+#index .blog-section-heading{color: #3C3C3C;padding: 54px 0 35px;font-size: 34px;}
+#index .blog-more{padding: 20px 0 51px;}
+/*合作伙伴*/
+#index .partner{background: url(../images/index/partner/partner-bg.png) center no-repeat fixed;background-size: cover;color: #fff;padding: 50px 0 100px;}
+#index .partner h2{padding-bottom: 60px;font-weight: 500;font-size: 34px;}
+#index .partner  .owl-dots { width: 100%;position: absolute;height: 30px;text-align: center;bottom: -80px;}
+#index .partner  .owl-dot.active { background-color:#42B3FF!important;}
+#index .partner .owl-dot { width: 10px;height: 10px;border-radius: 5px;background: #A6A6A6; display: inline-block;margin: 0 8px;}
+#index .partner .item {padding: 0;margin: 15px;color: #FFF;text-align: center;}
+#index .partner .owl-carousel .owl-item img {width: 100%;height: 100%;max-width: none;}
+/*底部*/
+.foot{padding-top:45px;background: #f2f2f2;}
+.foot a{color: #727272;}
+.foot a:hover{/*color: #24B2AE;*/color: #29A7E2;}
+.foot li{list-style-type: none;}
+.foot p{color: #727272;}
+.foot .foot-list div{text-align: center;background:rgba(23,37,60,0.8);padding: 15px; color: #ffffff;}
+/*.foot .tel{line-height: 45px;height: 45px;}*/
+.foot .tel-num{font-size: 26px;color: #24B2AE;}
+.fontWeight{font-weight: 400;}
+.inner-padding10{padding: 10px 0;}
+@media only screen and (max-width:768px){
+	.foot>.container>div{padding: 15px 0;border-bottom: 1px solid #e4e4e4;}
+}
+@media only screen and (min-width:768px){
+	.contact{padding-left: 20px;border-left:1px solid #e4e4e4;}
+}
+
+/*AI读心电图*/
+#AI-ecg img{width: 100%;}
+/*合作医院*/
+#AI-ecg .partner-hospital{background: #F2F2F2;padding-top: 82px;padding-bottom: 120px;}
+#AI-ecg .partner-hospital .hospital{padding-top: 64px;}
+#AI-ecg .partner-hospital h2{font-size: 40px;line-height: 56px;}
+#AI-ecg .partner-hospital h4{font-size: 24px;line-height: 33px;}
+#AI-ecg .partner-hospital .hospital-bg{background: #FFFFFF;padding-bottom: 20px;}
+#AI-ecg .partner-hospital .hospital-text{padding:10px 20px 20px;}
+#AI-ecg .partner-hospital .hospital-text h3{font-size: 26px;line-height: 37px;}
+#AI-ecg .partner-hospital .hospital-text p{font-size: 24px;}
+/*项目介绍*/
+#AI-ecg .project{padding-top: 70px;padding-bottom: 100px;}
+#AI-ecg .project p{line-height: 26px;padding-top: 57px;}
+@media only screen and (max-width:767px){
+	#AI-ecg .partner-hospital{
+    	background: #F2F2F2;
+    	padding-top: 30px;
+    	padding-bottom: 50px;
+	}
+	#AI-ecg .partner-hospital .hospital{padding-top: 20px;}
+	#AI-ecg .partner-hospital h2{font-size: 36px;line-height: 50px;}
+	#AI-ecg .partner-hospital .hospital-text p{font-size: 24px;}
+	#AI-ecg .project{padding-top: 40px;padding-bottom: 50px;}
+	#AI-ecg .project h2{font-size: 30px;}
+	#AI-ecg .project p{line-height: 34px;padding-top: 30px;}
+}
+
+/*居家心脏康复*/
+/*banner*/
+#homeHealth .homeHealth-people img{width: 100%;}
+#homeHealth .homeHealth-banner{posit-ion: relative;c-olor: #FFFFFF;display: block;}
+/*什么人需要康复*/
+/*#homeHealth .homeHealth-banner a{border: 1px solid #FFFFFF;color: #FFFFFF;width: 116px;height: 45px;border-radius: 4px;font-size: 20px;padding: 5px;}*/
+#homeHealth .homeHealth-people{padding-bottom: 90px;}
+#homeHealth .homeHealth-people a{border: 1px solid #0181E5;color:#0181E5;border-radius: 4px;display:block;pad-ding: 10px 20px;width: 160px;margin: 0 auto;text-align: center;line-height: 38px;}
+#homeHealth .homeHealth-need{padding-top: 117px;padding-bottom: 97px;line-height: 53px;}
+#homeHealth .homeHealth-people .homeHealth-needContent{padding-bottom: 65px;}
+#homeHealth .homeHealth-people .homeHealth-needContent>div{background: #00B0FF;he-ight: 443px;}
+#homeHealth .homeHealth-people .homeHealth-needContent p{color: #FFFFFF;padding:15px 15px 30px;height: 140px;}
+/*why*/
+#homeHealth .homeHealth-why .why-content{width: 52%;margin: 0 auto;}
+#homeHealth .homeHealth-why .why-content p{padding-top: 50px;padding-bottom: 130px;}
+/*五大处方管理*/
+#homeHealth .homeHealth-Rx{background:url(../images/product/homeHealth/Rx/Rx-bg.png) center no-repeat;background-size: cover;color: #FFFFFF;padding-bottom: 50px;}
+#homeHealth .homeHealth-Rx a{color: #FFFFFF;}
+#homeHealth .homeHealth-Rx .Rx-title{padding: 124px 0 92px;line-height: 50px;}
+#homeHealth .homeHealth-Rx .Rx-content{padding-bottom: 100px;margin-right: 48px;}
+/*康复内容*/
+#homeHealth .homeHealth-step .step-title{padding: 125px 10px 80px;line-height: 53px;}
+#homeHealth .step-content{padding: 30px;}
+#homeHealth .step-content .step-contentOne{margin-left: 5px;font-size: 20px;line-height: 50px;}
+#homeHealth .step-content .step-contentTwo{padding-left: 5px;}
+#homeHealth .step-content .step-contentTwo span{margin-left: 10px;}
+#homeHealth .homeHealth-step1{background:url(../images/product/homeHealth/content/1.png) center no-repeat;background-size: cover;padding-bottom: 60px;height: 744px;width: 100%;}
+#homeHealth .homeHealth-step2{background:url(../images/product/homeHealth/content/2.png) center no-repeat;background-size: cover;padding-bottom: 60px;height: 420px;width: 100%;}
+#homeHealth .homeHealth-step3{background:url(../images/product/homeHealth/content/3.png) center no-repeat;background-size: cover;padding-bottom: 60px;height: 669px;width: 100%;}
+#homeHealth .homeHealth-step4{background:url(../images/product/homeHealth/content/4.png) center no-repeat;background-size: cover;padding-bottom: 60px;height: 695px;width: 100%;}
+#homeHealth .homeHealth-step5{background:url(../images/product/homeHealth/content/5.png) center no-repeat;background-size: cover;padding-bottom: 60px;height: 500px;width: 100%;}
+
+@media only screen and (min-width:769px){.step-content-img img{display: none;}}
+@media only screen and (max-width:768px){
+	/*什么人需要康复*/
+	#homeHealth .homeHealth-people{padding-bottom: 0px;}
+	#homeHealth .homeHealth-why .why-content p{padding-top: 50px;padding-bottom: 30px;}
+	#homeHealth .homeHealth-need{padding-top: 67px;padding-bottom: 37px;line-height: 53px;}
+	/*why*/
+	#homeHealth .homeHealth-why .why-content{width:100%;margin: 0 auto;}
+	/*五大处方管理*/
+	#homeHealth .homeHealth-Rx{background:url(../images/product/homeHealth/Rx/icon_bg.png) center no-repeat;background-size: cover;color: #FFFFFF;padding-bottom: 50px;}
+	#homeHealth .homeHealth-Rx .Rx-title{padding: 100px 0 68px;}
+	#homeHealth .homeHealth-Rx .Rx-content{padding-bottom: 100px;margin-right: 0px;}
+	/**/
+	#homeHealth .homeHealth-step .step-title{padding: 5px 10px 40px;line-height: 53px;}
+	#homeHealth .step-content{padding:0 30px;}
+	#homeHealth .step-content .step-contentOne{margin-left: 5px;font-size: 16px;line-height: 20px;}
+	#homeHealth .homeHealth-step1,#homeHealth .homeHealth-step2,#homeHealth .homeHealth-step3,#homeHealth .homeHealth-step4,#homeHealth .homeHealth-step5{background:none;background-size: cover;padding-bottom: 60px;height:auto;}
+	
+}
+
+/*远程监测*/
+#netEcg .netEcg-content{padding-top: 86px;height: 503px;}
+#netEcg .netEcg-content .netEcg-contentNum{font-size: 40px;color: #00B0FF;line-height: 54px;float: left;}
+#netEcg .netEcg-content .netEcg-contenTitle{line-height: 54px;float: left;padding-left: 5px;font-weight: 600;}
+#netEcg .netEcg-content .netEcg-contentImg{display: inline-block;width: 5px;height: 5px;border-radius: 50%;background: #4BC5EC;margin:0 12px 0 35px ;}
+#netEcg .netEcg-service{background: url(../images/product/netEcg/netService-bg.png) center no-repeat;background-size: cover;color: #FFFFFF;}
+#netEcg .netEcg-service a{color: #FFFFFF;}
+#netEcg .netEcg-service a:hover{color: #52E9FF;}
+#netEcg .netEcg-service .netEcg-serviceTitle{padding-top:90px;padding-bottom: 69px;}
+#netEcg .netEcg-service .netEcg-serviceContent{padding-bottom: 273px;}
+#netEcg .netEcg-service .netEcg-serviceContent img:hover{transform: scale(1.2);}
+#netEcg .netEcg-service .netEcg-serviceContent img{transition: all 0.6s;}
+@media only screen and (max-width:768px){
+	#netEcg .netEcg-content{padding-top: 26px;height: auto;padding-bottom: 20px;}
+	#netEcg .netEcg-service{background: url(../images/product/homeHealth/Rx/icon_bg.png) center no-repeat;background-size: cover;}
+	#netEcg .netEcg-service .netEcg-serviceContent{padding-bottom: 73px;}
+}
+/*心脏健康管理*/
+#heartHealth .heartHealthHRG{background: #F2F2F2;padding-bottom:50px;}
+#heartHealth .heartHealthHRG h2{padding: 90px 0 69px;}
+#heartHealth .heartHealthHRG .heartHealthHRG-bg{background: #FFFFFF;}
+#heartHealth .heartHealthHRG .heartHealthHRG-text{padding:20px;height: 214px;}
+#heartHealth .scene{background: url(../images/product/heartHealth/scene-bg.png) center no-repeat;background-size: cover;color: #FFFFFF;}
+#heartHealth .sence-text{padding: 0 20px;}
+@media only screen and (max-width:768px){
+#heartHealth .heartHealthHRG h2{padding: 30px 0 29px;}
+}
+
+/*inticare*/
+#inticare{padding-top: 80px;}
+#inticare .inticare-buy{background:url(../images/product/inticare/banner-bg.png) center no-repeat;background-size: cover;width: 100%;height: 1572px;position: relative;}
+#inticare .inticare-buy h2{font-size: 50px;}
+#inticare .inticare-buy .inticare-buyTop{padding:100px 0 100px 10px;}
+#inticare .inticare-buy .inticare-buyTitle{font-size: 24px;line-height: 30px;color: #24B2AE;letter-spacing: 5px;}
+#inticare .inticare-buy .inticare-buyContent{line-height: 36px;padding: 50px 0;}
+#inticare .inticare-buy .inticare-buyPrice{color: #24B2AE;padding-bottom: 30px;}
+#inticare .inticare-buy .inticare-buyBtn{width: 192px;height: 56px;display: block;border: 1px solid #24B2AE;border-radius: 4px;line-height: 56px;color: #24B2AE;}
+#inticare .inticare-buy .inticare-buyBtn:hover{background-color: #24B2AE;color: #FFFFFF;}
+/*全天守候*/
+#inticare .inticare-buy .inticare-buySpan{padding-top: 350px;line-height: 36px;color: #FFFFFF;}
+#inticare .inticare-day{position: relative;height: 500px;}
+#inticare .inticare-day .inticare-dayLeft{position: absolute;top: -268px;}
+#inticare .inticare-day .inticare-dayRight{position: absolute;top: -100px;right: 200px;}
+#inticare .inticare-day .inticare-dayRightTop{color:#008FFF;}
+#inticare .inticare-day .inticare-dayRightBtm{padding: 44px 0 59px;}
+/*精准测量*/
+#inticare .inticare-precise{padding-bottom: 129px;}
+#inticare .inticare-precise .precise-content{line-height: 51px;font-size: 24px;color: #3b3b3b;padding-top: 30px;}
+/*一键守护*/
+#inticare .inticare-tap{width: 100%;height:auto;background: url(../images/product/inticare/tap-bg.png) center no-repeat;background-size: cover;padding-top: 216px;color: #FFFFFF;}
+#inticare .inticare-tap .inticare-tapTitle{color: #0ff6ff;padding-top: 232px;padding-bottom: 67px;}
+/*专业解读*/
+#inticare .inticare-professional{padding:50px 0 88px;}
+#inticare .professional-title{padding-top: 230px;}
+#inticare  .professional-content{padding: 34px 90px 56px;font-size: 24px;}
+#inticare .inticare-monitor{background: url(../images/product/inticare/monitor.png) center no-repeat;background-size: cover;padding:242px 0 64px;}
+#inticare .inticare-monitor .row{padding-left: 45px;}
+.monitor-title{color: #020202;}
+.monitor-content{color: #6c6c6c;}
+#inticare .inticare-monitor .professional-title{padding-bottom: 50px;}
+#inticare .inticare-foot{width: 100%;height:944px;color: #FFFFFF;background: url(../images/product/inticare/5.png) center no-repeat;background-size: cover;padding: 160px 10px 0;}
+#inticare .inticare-foot .inticare-footTitle{padding-bottom: 20px;}
+@media only screen and (max-width:768px){
+#inticare{padding-top: 22px;}
+#inticare .inticare-buy{background: url(../images/product/inticare/H5banner-bg.png) center no-repeat;background-size: cover;width: 100%;height:991px;}
+#inticare .inticare-buy .inticare-buyTop{padding:30px 0 30px 10px;}
+#inticare .inticare-buy h2{font-size: 30px;}
+#inticare .inticare-buy .inticare-buyTop{padding:50px 0 50px 10px;}
+#inticare .inticare-buy .inticare-buyTitle{font-size: 18px;line-height: 20px;color: #24B2AE;letter-spacing: 2px;}
+#inticare .inticare-buy .inticare-buyContent{line-height: 36px;padding: 30px 0;}
+#inticare .inticare-buy .inticare-buySpan{line-height: 26px;color: #FFFFFF;position: absolute;bottom: 150px;padding: 0 20px;}
+/*全天守候*/
+#inticare .inticare-day{position: relative;height:500px;}
+#inticare .inticare-day .inticare-dayRight{position: absolute;top: 0px;right: 0;}
+/*精准*/
+#inticare .inticare-precise{padding-bottom: 50px;}
+/*一键*/
+#inticare .inticare-tap{width: 100%;height:auto;background: url(../images/product/inticare/tap-bg.png) center no-repeat;background-size: cover;padding-top: 116px;color: #FFFFFF;}
+#inticare .inticare-tap .inticare-tapTitle{color: #0ff6ff;padding-top:0px;padding-bottom: 37px;}
+/*专业解读*/
+#inticare .inticare-professional{padding:0px 0 88px;}
+#inticare .professional-title{padding-top: 70px;}
+#inticare  .professional-content{padding: 20px 0px 36px;font-size: 16px;}
+#inticare .inticare-monitor .row{padding-left:5px;}
+#inticare .inticare-monitor .professional-title{padding-bottom: 0px;}
+#inticare .inticare-monitor{background: url(../images/product/inticare/monitor.png) center no-repeat;background-size: cover;padding:52px 0 34px;}
+#inticare .inticare-foot{width: 100%;height: 360px;padding: 30px 10px 0;}
+}
+
+
+/*hellofit*/
+#hellofit .hellofit-top{background: url(../images/product/hellofit/hellofitbannerBG.png);height: 1080px;}
+#hellofit .hellofit-top-img{padding-top: 127px;}
+#hellofit .hellofit-monitor{padding-bottom: 82px;}
+#hellofit .hellofit-monitor p{padding: 78px 0 87px 0;}
+#hellofit .hellofit-foot{width: 100%;height:795px;color: #FFFFFF;background: url(../images/product/hellofit/5banner.png) center no-repeat;background-size: cover;padding: 90px 10px 0;}
+#hellofit .hellofit-footTitle{padding-bottom: 20px;}
+@media only screen and (max-width:767px){
+	#hellofit .hellofit-top{background: url(../images/product/hellofit/H5hellofit_banner.png) center no-repeat;background-size: cover;height:auto;}
+	#hellofit .hellofit-top-img{padding-top: 57px;}
+	#hellofit .hellofit-monitor{padding-bottom: 42px;}
+	#hellofit .hellofit-monitor p{padding: 38px 0 27px 0;}
+	#hellofit .hellofit-foot{width: 100%;height:600px;background: url(../images/product/hellofit/h5.png) center no-repeat;padding: 30px 10px 0;background-size: cover;}
+}
+
+/*userApp download*/
+#userAPP .userAPP-banner{background: url(../images/user/1/userAppbanner.png) center no-repeat;padding: 150px 0 118px 0;color: #FFFFFF;}
+#userAPP .userAPP-h01{background: url(../images/user/2/bg.png) center no-repeat;background-size: cover;}
+#userAPP .userAPP-h01-left{padding-top: 400px;}
+#userAPP .userAPP-h01-right{padding-top: 200px;}
+#userAPP .userAPP-h02{background: url(../images/user/3/bg.png) center no-repeat;background-size: cover;}
+#userAPP .userAPP-h03{background: url(../images/user/4/bg.png) center no-repeat;background-size: cover;}
+#userAPP .userAPP-h04{background: url(../images/user/5/bg.png) center no-repeat;background-size: cover;}
+@media only screen and (max-width:768px){
+	#userAPP .userAPP-h01-left{padding-top: 90px;}
+	#userAPP .userAPP-h01-right{padding-top: 70px;}
+	
+}
+/*doctorAPP下载页*/
+#doctorAPP .doctorAPP-banner{background: url(../images/doctor/1/bannerBg.png) center no-repeat;padding: 150px 0 118px 0;color: #FFFFFF;}
+#doctorAPP .doctorAPP-h01{background: url(../images/doctor/2/bg.png) center no-repeat;background-size: cover;}
+#doctorAPP .doctorAPP-h01-left{padding-top: 200px;}
+#doctorAPP .doctorAPP-h01-right{padding-top: 100px;}
+#doctorAPP .doctorAPP-h02{background: url(../images/doctor/3/bg.png) center no-repeat;background-size: cover;}
+
+@media only screen and (max-width:768px){
+	#doctorAPP .doctorAPP-h01-left{padding-top: 70px;}
+	#doctorAPP .doctorAPP-h01-right{padding-top: 30px;}		
+}
+/*新闻资讯*/
+#news .nav-tabs { border-bottom:none;}
+#news .nav>li {float: none;  position: relative;}
+#news > .container{padding: 0;}
+/*#news > .container >div> .ul-wapper > .nav-tabs > li{list-style-type:disc;}*/
+#news > .container >div> .ul-wapper > .nav-tabs > li > a{display: inline-block;color: #7e7e7e;/*padding: 0 13px;border-left:4px solid transparent;*/}
+#news > .container >div> .ul-wapper > .nav-tabs > li > a:hover {border-color: transparent;background-color: transparent; color: #000;}
+#news > .container >div> .ul-wapper > .nav-tabs > li.active > a { background-color: transparent;color: #000; /*border-bottom: 1px solid #e92322;border-radius: 0px;*/font-weight: 600;border:0;/*border-left: 4px solid #008FFF;*/}
+/*#news > .container >div> .ul-wapper > .nav-tabs > li.active > a:hover{border-left: 1px solid red;}*/
+#news .lineTwo{text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+#news .glyphicon {top: 0;}
+#news .form-control {height: 28px}
+#news .btn{line-height: 1.02857143;}
+#news .newsList{display: block;cursor: pointer;}
+#news .newslist-img{width:100%;height:130px;}
+@media only screen and (max-width:768px){
+	#news .nav-tabs>li {
+	     float: left; 
+	}
+	#news.nav-tabs {
+	    border-bottom: 1px solid #ddd;
+	}	
+	#type img{display: none;}
+	#news .newslist-img{width:100%;height:90px;}
+}
+/*文章*/
+#artical .recommed{padding-left: 20px;border-left: 6px solid #008FFF;}
+#artical #artical-list>li>a{display: block;}
+#artical #artical-list>li>a:hover{color: #52E9FF;}
+#artical #artical-list>li>a>p{color: #505050;}
+#artical #artical-list>li>p{color: #AFAFAF;m-argin-left: 20px;}
+/*关于我们*/
+/*公司介绍*/
+#company #about-list, #team #about-list,#contactUs #about-list{ border-bottom:none;}
+#company #about-list>li ,#team #about-list>li,#contactUs #about-list>li{float: none;  position: relative;}
+#company > .container,#team > .container,#contactUs > .container{padding: 0;}
+#company > .container >div> .ul-wapper > #about-list > li > a,#team > .container >div> .ul-wapper > #about-list> li > a,#contactUs > .container >div> .ul-wapper > #about-list > li > a{display: inline-block;color: #7e7e7e;padding: 0 13px;border-left:4px solid transparent;}
+#company > .container >div> .ul-wapper > #about-list > li > a:hover,#team > .container >div> .ul-wapper > #about-list > li > a:hover,#contactUs > .container >div> .ul-wapper > #about-list > li > a:hover {border-color: transparent;background-color: transparent; color: #000;}
+#company > .container >div> .ul-wapper > #about-list > li.active > a,#team > .container >div> .ul-wapper > #about-list > li.active > a,#contactUs > .container >div> .ul-wapper > #about-list> li.active > a{ background-color: transparent;color: #000;border-radius: 0px;font-weight: 600;border:0;border-left: 4px solid #008FFF;}
+#company .nav-tabs>li>a{border-top: none;border-left: none;border-right: none;}
+#company .nav-tabs>li.active>a,#company .nav-tabs>li.active>a:focus,#company .nav-tabs>li.active>a:hover{border-bottom: 3px solid #008FFF;color: #000000;font-weight: 600;background-color: transparent;}
+#company .nav-tabs>li>a,#company .nav-tabs>li>a:focus,#company .nav-tabs>li>a:hover{border-bottom: 3px solid transparent;color: #000000;background-color: transparent;}
+@media only screen and (max-width:767px){
+	#company #company-about{border: none;}
+	#company #company-banner{height:162px;}
+	#team #team-banner{height:162px;}
+	#contactUs #contactUs-banner{height:162px;}
+	#company-about li:nth-child(odd){width: 49%;}
+	#company #AIlife,#company #ect{padding: 10px 0;text-align: center;}
+}
+/*产品团队*/
+@media only screen and (max-width:768px){
+	#team .ceo{padding-top: 35px;}
+	#team .ceo-body{padding-top: 26px;}
+}
+/*联系我们*/
+#contactUs .nav-tabs>li>a{border-top: none;border-left: none;border-right: none;}
+#contactUs .nav-tabs>li.active>a,#contactUs .nav-tabs>li.active>a:focus,#contactUs .nav-tabs>li.active>a:hover{border-bottom: 3px solid #008FFF;color: #000000;font-weight: 600;background-color: transparent;}
+#contactUs .nav-tabs>li>a,#contactUs .nav-tabs>li>a:focus,#contactUs .nav-tabs>li>a:hover{border-bottom: 3px solid transparent;color: #000000;background-color: transparent;}
+@media only screen and (max-width:767px){
+	#contactUs #contactUs-about{border: none;}
+	#contactUs #contactUs-banner{height:162px;}
+	#contactUs-about li:nth-child(odd){width: 49%;}
+	#contactUs #cooperate,#contactUs #recruit{padding: 10px 0;text-align: center;}
+}
+.showtable{ width: 100%; text-align:left; border:none; color: #363636; }
+.showtable thead{ height: 50px;line-height: 50px; }
+.showtable thead th{ height:30px;margin-top: 10px; ba-ckground: #ffffff; }
+.showtable tbody tr{ height:60px; font-size: 16px; }
+.showtable tbody tr:nth-child(4n+0),.showtable tbody tr:nth-child(4n+3){ background: #f2f2f2; }
+.showtable tbody tr .button{ width:14px;height:8px;font-size: 14px;color: #24b2ae;; display: inline-block; line-height: 23px; }
+.showtable tbody tr .showbutton{ background: url(../../static/images/aboutUs/contactUs/arrow-multi.png) no-repeat -56px 0px; }
+.showtable tbody tr .showbutton:hover{ background: url(../../static/images/aboutUs/contactUs/arrow-multi.png) no-repeat 0px 0px; }
+.showtable tbody tr div{ height: 29px; line-height: 29px; }
+.showtable tbody tr .hidebutton{ background: url(../../static/images/aboutUs/contactUs/arrow-multi.png) no-repeat -38px 0px; }
+.showtable tbody tr .hidebutton:hover{ background: url(../../static/images/aboutUs/contactUs/arrow-multi.png) no-repeat -18px 0px; }
+.showtable tr.infotr,.showtable tr.infotr > td{ height:auto; border:none; }
+.showtable .infotr div{ width:100%;text-align: left;padding-left: 5%;height:auto; display: none; max-width: 900px; border-top:1px solid #979797;}
+/*.showtable .infotr div .title { font-weight: bold;font-size: 18px; }*/
+/*QQ*/
+.rides-cs {  font-size: 12px; background:#29a7e2; position: fixed; top: 250px; right: 0px; _position: absolute; z-index: 1500; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs img{ display:inline; border:0;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top: 21px;height: 181px;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #333;font-weight:600; line-height:24px;padding:5px;text-align:center;}
+.rides-cs .cn ul {padding:0px;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;border-bottom: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:25px; left: 0;  background-image: url(../../static/images/kefu.png); background-repeat: no-repeat; display:block;  height: 146px; padding: 8px;}
+.rides-cs .btnOpen { background-position: 0 0;}
+.rides-cs .btnCtn { background-position: -37px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+/*返回顶部*/
+.backTop>div{width: 37px;height: 52px;position: fixed;top:550px;right: 0;background: #29a7e2;border-radius: 6px 0px 0 6px;text-align: center;}
+.backTop>div>p{text-align: center;line-height: 14px;font-size: 12px;color: #FFFFFF;}
+/*帮助中心*/
+#help-position .nav-tabs { border-bottom:none;}
+#help-position> .container >div> .ul-wapper > .nav-tabs > li > a{display: inline-block;color: #7e7e7e;/*padding: 0 13px;border-left:4px solid transparent;*/}
+#help-position > .container >div> .ul-wapper > .nav-tabs > li > a:hover {border-color: transparent;background-color: transparent; color: #000;}
+#help-position > .container >div> .ul-wapper > .nav-tabs > li.active > a { background-color: transparent;color: #000; /*border-bottom: 1px solid #e92322;border-radius: 0px;*/font-weight: 600;border:0;/*border-left: 4px solid #008FFF;*/}
+.use-list{border-left: 1px dashed #CECECE;padding-left: 20px;}
+/*inticare-parts*/
+#inticare-part .inticare-part-banner{background: url(../../static/images/product/inticare/inticare-partBG.png) center no-repeat;background-size: cover;width: 100%;height: 665px;padding:7% 23% 0 22%;}
+#inticare-part .inticare-part2{background: #F2F2F2;width: 100%;height: 665px;padding:166px 23% 0 22%;}
+#inticare-part .inticare-part3{height: 582px;padding-top: 107px;}
+#inticare-part .inticare-part3>div{width: 437px;margin: auto;text-align: left;}
+#inticare-part .inticare-part-buyBtn{width: 192px;height: 56px;display: block;border: 2px solid #008FFF;border-radius: 4px;line-height: 56px;color: #0072FF;}
+#inticare-part .inticare-part-buyBtn:hover{background:#0180E4; color: #ffffff;}
+/*禁忌*/
+#cannot #cannotList{width:50%;}
+#privacy{width: 100%;background:#f2f2f2;padding-top: 84px;padding-bottom: 60px;}
+#privacy .privacy-content{width:85%;height: auto;background: #fff;margin: auto;padding:40px;}
+@media only screen and (max-width:768px){
+	#cannot #cannotList{width:90%;}
+	#privacy .privacy-content{width:100%;}
+}
